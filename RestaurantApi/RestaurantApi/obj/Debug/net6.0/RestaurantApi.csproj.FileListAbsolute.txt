@@ -53,3 +53,8 @@ M:\Matias\Informatica 2023\Segundo Semestre\Arquitectura\RestaurantApi\Restauran
 M:\Matias\Informatica 2023\Segundo Semestre\Arquitectura\RestaurantApi\RestaurantApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 M:\Matias\Informatica 2023\Segundo Semestre\Arquitectura\RestaurantApi\RestaurantApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 M:\Matias\Informatica 2023\Segundo Semestre\Arquitectura\RestaurantApi\RestaurantApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+M:\Matias\Informatica 2023\Segundo Semestre\Arquitectura\RestaurantApi\RestaurantApi\bin\Debug\net6.0\System.Web.Cors.dll
+M:\Matias\Informatica 2023\Segundo Semestre\Arquitectura\RestaurantApi\RestaurantApi\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+M:\Matias\Informatica 2023\Segundo Semestre\Arquitectura\RestaurantApi\RestaurantApi\bin\Debug\net6.0\System.Web.Http.dll
+M:\Matias\Informatica 2023\Segundo Semestre\Arquitectura\RestaurantApi\RestaurantApi\bin\Debug\net6.0\System.Web.Http.Cors.dll
+M:\Matias\Informatica 2023\Segundo Semestre\Arquitectura\RestaurantApi\RestaurantApi\bin\Debug\net6.0\Newtonsoft.Json.dll

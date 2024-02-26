@@ -1,14 +1,17 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="index.css" />
 <script src="script.js"></script>
     <h1>Gestion de pedidos</h1>
-    <a onclick="agregar()" href="#" class="myButton">Agregar Pedido</a>
+    <a id="botonAgregar" onclick="agregar()" href="#" class="botonEditar">Agregar Pedido</a>
 
 <table id="pedido">
   <thead>
     <tr>
-      <th>id</th>
-      <th>plato</th>
-      <th>descripcion</th>
-      <th>proceso</th>
+      <th>Id</th>
+      <th>Plato</th>
+      <th>Descripcion</th>
+      <th>Terminado</th>
+      <th>Acciones</th>
     </tr>
   </thead>
 
@@ -17,3 +20,10 @@
   </tbody>
 
 </table>
+
+<div class="modal-body">
+  <input id="txtPlato" type="text"
+  placeholder="Plato" /> <br/>
+  <input id="txtDescripcion" type="text"
+  placeholder="Descripcion" /> <br/>
+</div>

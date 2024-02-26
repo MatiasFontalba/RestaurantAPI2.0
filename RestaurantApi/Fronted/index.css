@@ -1,0 +1,89 @@
+body{
+    background-image: url("../Fronted/background-idex.jpg")
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ddd;
+}
+#pedido {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #pedido td,
+  #pedido th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #pedidod tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #pedido tr {
+    background-color: #ddd;
+  }
+  
+  #pedido th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(34, 31, 197);
+    color: white;
+  }
+
+  .botonEditar {
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+    background-color: #33bdef;
+    border-radius: 6px;
+    border: 1px solid #057fd0;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #5b6178;
+  }
+  
+  .botonEditar:hover {
+    background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+    background-color: #019ad2;
+  }
+  
+  .botonEditar:active {
+    position: relative;
+    top: 1px;
+  }
+  
+  .botonEliminar {
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background: linear-gradient(to bottom, #ed3434 5%, #d10202 100%);
+    background-color: #ed3434;
+    border-radius: 6px;
+    border: 1px solid #cf0606;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #5b6178;
+  }
+  
+  .botonEliminar:hover {
+    background: linear-gradient(to bottom, #d10202 5%, #ed3434 100%);
+    background-color: #d10202;
+  }
+  
+  .botonEliminar:active {
+    position: relative;
+    top: 1px;
+  }
+

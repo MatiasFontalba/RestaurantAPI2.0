@@ -12,24 +12,58 @@ async function search() {
         "method": 'GET',
         "headers": {
             "Content-Type": 'application/json'
-        }
+        },
+        
     })
 
 var resultado = await response.json();
 
-console.log(resultado)
-
+var html = ''
+for (cocina of resultado){
     var row = `<tr>
-    <td>1</td>
-    <td>plato</td>
-    <td>descripcion</td>
-    <td>terminado</td>
+    <td>${cocina.id}</td>
+    <td>${cocina.plato}</td>
+    <td>${cocina.descripcion}</td>
+    <td>${cocina.terminado}</td>
     <td>
-        <a>Editar</a>
-        <a>Eliminar</a>
+        <a                              class="botonEditar">Editar</a>
+        <a href="#" onclick="remove(${cocina.id})" class="botonEliminar" >Eliminar</a>
     </td>
     </tr>`
-
-    document.querySelector(`#pedido > tbody`).outerHTML = 
-    row
+    html = html + row;
 }
+    document.querySelector(`#pedido > tbody`).outerHTML = html
+}
+
+
+async function remove(id){
+    respuesta = confirm('¿Estas seguro de querer eliminarlo?')
+    if(respuesta){
+        var url = URL_API + 'cocina/' + id
+        await fetch(url, {
+        "method": 'DELETE',
+        "headers": {
+            "Content-Type": 'application/json'
+        }
+        
+    })
+    window.location.reload();
+    }
+}
+
+async function agregar(){
+    if(respuesta){
+        var url = URL_API + 'cocina'
+        await fetch(url, {
+        "method": 'POST',
+        "headers": {
+            "Content-Type": 'application/json'
+        }
+        
+    })
+    window.location.reload();
+    }
+}
+
+//3:43:00
+//49:00

@@ -13,14 +13,14 @@ namespace RestaurantApi.Repositories
         }
         public DbSet<CocinaEntity> Cocina { get; set; }
 
-        public async Task<CocinaEntity> Get(int id)
+        public async Task<CocinaEntity?> Get(int id)
         {
-            return await Cocina.FirstAsync(x => x.Id == id);
+            return await Cocina.FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<bool> Delete(int Id)
         {
-            var entity = await Get(Id); 
+            CocinaEntity entity = await Get(Id); 
             Cocina.Remove(entity);
             SaveChanges();
             return true;
@@ -39,6 +39,14 @@ namespace RestaurantApi.Repositories
             EntityEntry<CocinaEntity> response = await Cocina.AddAsync(entity);
             await SaveChangesAsync();
             return await Get(response.Entity.Id ?? throw new Exception("No se puede guardar"));
+        }
+
+        public async Task<bool> Actualizar(CocinaEntity cocinaEntity)
+        {
+            Cocina.Update(cocinaEntity);
+            await SaveChangesAsync();
+
+            return true;
         }
     }
 
